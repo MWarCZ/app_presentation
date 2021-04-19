@@ -4,10 +4,18 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <HRCloud class="hr-cloud" prevColor="var(--p-color)" nextColor="var(--n-color)" />
     <router-view/>
   </div>
 </template>
-
+<script>
+import HRCloud from '@/components/HRCloud.vue'
+export default {
+  components: {
+    HRCloud,
+  },
+}
+</script>
 <style lang="scss">
 /* Default style */
 *, ::before, ::after {
@@ -28,10 +36,15 @@ html, body, #app {
 
   display: flex;
   flex-direction: column;
+
+  --p-color: #fff;
+  --n-color: navy;
+  background-color: var(--n-color);
 }
 
 #nav {
-  padding: 30px;
+  background-color: var(--p-color);
+  padding: 1rem;
   a {
     font-weight: bold;
     color: #2c3e50;

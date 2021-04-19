@@ -4,7 +4,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'Home',
   components: {
@@ -13,6 +12,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .home {
-  flex-grow:1;
+  flex-grow: 1;
 }
 </style>

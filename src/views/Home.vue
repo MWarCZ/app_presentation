@@ -23,6 +23,25 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rem mollitia voluptatem eveniet hic, accusamus quisquam a eos repellendus animi sequi, tempore nobis natus nulla! Corrupti laboriosam eligendi voluptates! Beatae.
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat modi libero error qui repellat deleniti laborum sunt magnam consequuntur magni vero fugit, esse inventore ad, porro amet, sapiente sit. Officiis?
       </p>
+      <ScreenShow />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, impedit unde culpa numquam aliquid ex, voluptate exercitationem rerum error beatae expedita ipsa, reiciendis accusantium maxime enim? Pariatur eius quis et.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, impedit unde culpa numquam aliquid ex, voluptate exercitationem rerum error beatae expedita ipsa, reiciendis accusantium maxime enim? Pariatur eius quis et.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in distinctio quidem velit assumenda voluptates quisquam, incidunt doloremque vitae eius, voluptatibus porro quis, consectetur sunt placeat ullam nisi architecto fugiat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, praesentium. Tenetur, deserunt rem? Dicta a suscipit, odit labore minus non vero illum. Dolores maiores beatae, quidem repellat asperiores numquam exercitationem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium beatae magnam perferendis unde dolor vitae, sunt, molestiae fugiat quisquam corporis labore impedit. Neque hic fuga eligendi, suscipit illo fugiat incidunt.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, impedit unde culpa numquam aliquid ex, voluptate exercitationem rerum error beatae expedita ipsa, reiciendis accusantium maxime enim? Pariatur eius quis et.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rem mollitia voluptatem eveniet hic, accusamus quisquam a eos repellendus animi sequi, tempore nobis natus nulla! Corrupti laboriosam eligendi voluptates! Beatae.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat modi libero error qui repellat deleniti laborum sunt magnam consequuntur magni vero fugit, esse inventore ad, porro amet, sapiente sit. Officiis?
+      </p>
     </main>
     <HRHill class="hr-hill" prevColor="var(--main-bg-color)" nextColor="var(--footer-bg-color)" />
     <footer class="container">
@@ -37,11 +56,13 @@
 <script>
 import HRCloud from '@/components/HRCloud.vue'
 import HRHill from '@/components/HRHill.vue'
+import ScreenShow from '@/components/ScreenShow.vue'
 export default {
   name: 'Home',
   components: {
     HRCloud,
     HRHill,
+    ScreenShow,
   },
 }
 </script>
@@ -69,6 +90,10 @@ main {
   color: var(--main-fg-color);
   background-color: var(--main-bg-color);
   flex-grow: 1;
+  text-align: justify;
+  h2 {
+    text-align: center;
+  }
 }
 footer {
   color: var(--footer-fg-color);

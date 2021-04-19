@@ -6,13 +6,16 @@
     </div>
     <HRCloud class="hr-cloud" prevColor="var(--p-color)" nextColor="var(--n-color)" />
     <router-view/>
+    <HRHill class="hr-hill" prevColor="var(--n-color)" nextColor="var(--p-color)" />
   </div>
 </template>
 <script>
 import HRCloud from '@/components/HRCloud.vue'
+import HRHill from '@/components/HRHill.vue'
 export default {
   components: {
     HRCloud,
+    HRHill,
   },
 }
 </script>
@@ -52,6 +55,19 @@ html, body, #app {
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+</style>
+<style lang="scss" scoped>
+$widthLockLimit: 800px;
+.hr-cloud {
+  @media (min-width: $widthLockLimit) {
+    height: 5rem;
+  }
+}
+.hr-hill {
+  @media (min-width: $widthLockLimit) {
+    height: 5rem;
   }
 }
 </style>

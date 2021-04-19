@@ -6,14 +6,7 @@
     :class="svgClass"
     :style="svgStyle"
   >
-    <mask id="myMask">
-      <rect width="100%" height="100%" fill="#fff" />
-      <ellipse cx="3" cy="-2" rx="5" ry="4" fill="#000" />
-      <ellipse cx="11" cy="-2" rx="6" ry="5" fill="#000" />
-      <ellipse cx="19" cy="-1" rx="5" ry="4" fill="#000" />
-      <ellipse cx="27" cy="-2.5" rx="5" ry="5" fill="#000" />
-    </mask>
-    <rect mask="url(#myMask)" x="-5%" y="-5%" width="110%" height="110%" class="svg_clr" />
+    <ellipse cx="50%" cy="100%" rx="50%" ry="100%"  class="svg_clr"  />
   </svg>
 </template>
 

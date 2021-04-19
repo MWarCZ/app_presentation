@@ -9,17 +9,29 @@
 </template>
 
 <style lang="scss">
+/* Default style */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  min-height: 100vh;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
+  display: flex;
+  flex-direction: column;
 }
 
 #nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;

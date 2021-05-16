@@ -6,9 +6,11 @@
     <HRCloud class="hr-cloud" prevColor="var(--header-bg-color)" nextColor="var(--main-bg-color)" />
     <main class="container">
       <h2>Main</h2>
+      <Checkbox />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam necessitatibus ipsa blanditiis, obcaecati voluptate commodi impedit saepe aspernatur ab voluptatem a minima nemo dolores? Blanditiis dignissimos atque eligendi vel ut.
       </p>
+      <CheckboxV1 />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, impedit unde culpa numquam aliquid ex, voluptate exercitationem rerum error beatae expedita ipsa, reiciendis accusantium maxime enim? Pariatur eius quis et.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, impedit unde culpa numquam aliquid ex, voluptate exercitationem rerum error beatae expedita ipsa, reiciendis accusantium maxime enim? Pariatur eius quis et.
@@ -57,12 +59,16 @@
 import HRCloud from '@/components/HRCloud.vue'
 import HRHill from '@/components/HRHill.vue'
 import ScreenShow from '@/components/ScreenShow.vue'
+import Checkbox from '@/components/Checkbox.vue'
+import CheckboxV1 from '@/components/CheckboxV1.vue'
 export default {
   name: 'Home',
   components: {
     HRCloud,
     HRHill,
     ScreenShow,
+    Checkbox,
+    CheckboxV1,
   },
 }
 </script>
